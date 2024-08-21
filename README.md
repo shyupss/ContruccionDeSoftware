@@ -10,7 +10,7 @@ Este repositorio contiene una colección de proyectos del curso. Los proyectos e
 
 1. **Explora las carpetas**: Cada carpeta corresponde a un proyecto individual. Dentro de cada carpeta, encontrarás los archivos relacionados con ese proyecto.
    
-2. **Abre los archivos HTML**: Puedes abrir los archivos `.html` en tu navegador para ver cómo se visualiza la página web.
+2. **Abre los archivos HTML**: Puedes ejecutar los proyectos del repositorio y visualizarlos en tu navegador.
 
 3. **Lee los comentarios en el código**: He añadido comentarios en el código fuente para explicar las partes más importantes y las decisiones que he tomado durante el desarrollo.
 
@@ -22,7 +22,7 @@ Iré actualizando este repositorio regularmente con nuevos proyectos y mejoras a
 
 - **Acceso de solo lectura**: Este repositorio está configurado como solo lectura para ustedes. Podrán ver todo el contenido y descargarlo si lo desean, pero no podrán hacer modificaciones en este repositorio.
   
-- **¿Tienes preguntas?**: Si tienes alguna duda o no entiendes alguna parte del código, no dudes en contactarme. Estoy aquí para ayudarte a aprender y mejorar.
+- **¿Tienes preguntas?**: Si tienes alguna duda o no entiendes alguna parte del código, puedes escribirme sin problema.
 
 ## Cómo clonar el repositorio
 
