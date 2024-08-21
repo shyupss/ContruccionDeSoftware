@@ -10,7 +10,7 @@ Este repositorio contiene una colección de proyectos del curso. Los proyectos e
 
 1. **Explora las carpetas**: Cada carpeta corresponde a un proyecto individual. Dentro de cada carpeta, encontrarás los archivos relacionados con ese proyecto.
    
-2. **Abre los archivos HTML**: Puedes ejecutar los proyectos del repositorio y visualizarlos en tu navegador.
+2. **Abre los archivos**: Puedes ejecutar los proyectos del repositorio y visualizarlos en tu navegador.
 
 3. **Lee los comentarios en el código**: He añadido comentarios en el código fuente para explicar las partes más importantes y las decisiones que he tomado durante el desarrollo.
 
