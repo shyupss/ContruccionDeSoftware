@@ -1,0 +1,65 @@
+// setTimeout <--
+
+Formalmente, setTimeout recibe dos parámetros en un paréntesis.
+
+El primer parámetro será código arbitrario, mientras que el segundo parámetro será el tiempo que demorará en ejecutar ese código.
+
+Tengamos en cuenta que setTimeout se ejecuta una sola vez por cada invocación.
+
+Como setTimeout es una función global en JavaScript, lo que retorna esta función es un identificador. Este identificador te permite referirte al temporizador específico que se creó con setTimeout, y luego podrás usarlo para cancelarlo si es necesario.
+
+// clearTimeout <--
+
+Esta también es una función global, y recibe un solo parámetro: el identificador del temporizador que queremos evitar o cancelar. En otras palabras, clearTimeout limpia o detiene un timeout particular, evitando que se ejecute el código que estaba programado.
+
+Ejemplo de uso:
+
+const timeoutId = setTimeout(() => console.log("Hola"), 500);
+
+=> El único parámetro válido para la función clearTimeout sería en este caso "timeoutId".
+
+clearTimeout(timeoutId); // Esto cancelaría la ejecución del console.log
+
+___________________________________________________________________________________________
+
+// useState <--
+
+El hook useState es algo particular, ya que nos sirve para declarar variables que cambian de valor (estado) y funciones que pueden alterar esas variables.
+
+Para declarar correctamente un estado con useState, necesitamos hacerlo de la siguiente manera:
+
+const [variable, setVariable] = useState(valorInicial);
+
+¿Qué es cada parte?...
+
+El primer elemento del array es la variable de estado. Este valor se verá afectado en caso de que se ejecute la función relacionada (la del segundo parámetro).
+
+El segundo parámetro es una función que se puede llamar en cualquier momento, y su objetivo es actualizar el valor del primer elemento del array. Esta función recibe un parámetro, y el valor que se le pase será el nuevo valor de la variable de estado.
+
+useState(valorInicial) se usa para dar un valor inicial o de partida a la variable de estado.
+
+________________________________________________________________________________________
+
+// useEffect <--
+
+El hook useEffect recibe como argumentos dos parámetros: el primer parámetro es código arbitrario (lo que sea que quieras ejecutar), y el segundo parámetro es un array. Este array puede contener uno o más elementos, que suelen ser variables (dependencias). 
+
+El propósito del array de dependencias es hacer que useEffect esté atento a cualquier cambio en las variables dentro de ese array. Entonces, si alguno de esos elementos varía, useEffect ejecutará el código arbitrario del primer parámetro.
+
+El segundo parámetro, habíamos dicho, es un array con dependencias. Si alguna de esas dependencias cambia, se ejecuta el código. Así es como funciona:
+
+useEffect(() => {
+  console.log("Algo cambió");
+}, [tiempo, cancion]);
+
+Supongamos que en nuestro código, la variable "cancion" cambia a la siguiente canción. En ese caso, se imprimirá en la consola "Algo cambió".
+
+Cabe aclarar que el segundo parámetro es opcional, pero eso tiene implicaciones:
+
+- Si no se proporciona el segundo parámetro, entonces useEffect se ejecutará en cada renderizado del componente, sin importar qué lo haya causado.
+- Si el segundo parámetro es un array vacío ([]), entonces el useEffect se ejecutará solo una vez, al montar el componente por primera vez.
+- Si el array contiene dependencias, entonces useEffect se ejecutará cuando cualquiera de esas dependencias cambie.
+
+Nota importante: El useEffect siempre se ejecuta al menos una vez cuando el componente se monta, incluso si proporcionas un array de dependencias. Después de esa primera ejecución, solo se ejecutará de nuevo si alguna de las dependencias en el array cambia.
+
+Estas dependencias se llaman formalmente dependencias del useEffect.
