@@ -1,0 +1,35 @@
+{
+    "pageTitle": "Mis Pruebas",
+    "tests": [
+      {
+        "subjectId": "BAIN069-14",
+        "subjectName": "Química",
+        "testDate": "2024-09-30 17:30:00"
+      },
+      {
+        "subjectId": "BAIN065-14",
+        "subjectName": "Álgebra",
+        "testDate": "2024-12-24 17:30:00"
+      },
+      {
+        "subjectId": "BAIN067-14",
+        "subjectName": "Geometría",
+        "testDate": "2024-10-13 15:23:00"
+      },
+      {
+        "subjectId": "BAIN073-14",
+        "subjectName": "Álgebra Lineal",
+        "testDate": "2024-12-24 17:30:00"
+      },
+      {
+        "subjectId": "BAIN060-14",
+        "subjectName": "Cálculo I",
+        "testDate": "2024-12-24 17:30:00"
+      },
+      {
+        "subjectId": "BAIN090-14",
+        "subjectName": "Cálculo II",
+        "testDate": "2024-12-24 17:30:00"
+      }
+    ]
+  }
